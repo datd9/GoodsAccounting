@@ -14,3 +14,15 @@
 
 Диаграмма процесса продажи товара
 ![saleAS_IS](saleAS_IS.png)
+Диаграмма процесса пополнения товара
+![refillAS_IS](refillAS_IS.png)
+
+### Схемы бизнес-процессов TO-BE
+
+Диаграмма процесса продажи товара
+![saleTO_BE](saleTO_BE.png)
+Диаграмма процесса пополнения товара
+![refillTO_BE](refillTO_BE.png)
+
+## UML Class диаграмма базы данных
+![DB](DB.png)
