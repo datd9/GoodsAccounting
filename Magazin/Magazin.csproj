@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{301C00DE-0870-43F2-A5BA-694C86F0F969}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Magazin</RootNamespace>
+    <AssemblyName>Magazin</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel1">
+      <HintPath>C:\Program Files (x86)\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\Office15\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.29.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data.EntityFramework, Version=8.0.29.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Web, Version=8.0.29.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormAcceptOrderBuy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAcceptOrderBuy.Designer.cs">
+      <DependentUpon>FormAcceptOrderBuy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAccRare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAccRare.Designer.cs">
+      <DependentUpon>FormAccRare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdd.Designer.cs">
+      <DependentUpon>FormAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddRare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddRare.Designer.cs">
+      <DependentUpon>FormAddRare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCheckBuy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCheckBuy.Designer.cs">
+      <DependentUpon>FormCheckBuy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCheckOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCheckOrder.Designer.cs">
+      <DependentUpon>FormCheckOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCheckOrderRare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCheckOrderRare.Designer.cs">
+      <DependentUpon>FormCheckOrderRare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormItemOn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormItemOn.Designer.cs">
+      <DependentUpon>FormItemOn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOrder.Designer.cs">
+      <DependentUpon>FormOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOrderBuy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOrderBuy.Designer.cs">
+      <DependentUpon>FormOrderBuy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOrderRare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOrderRare.Designer.cs">
+      <DependentUpon>FormOrderRare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRare.Designer.cs">
+      <DependentUpon>FormRare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormWrittenOf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormWrittenOf.Designer.cs">
+      <DependentUpon>FormWrittenOf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginCLForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginCLForm.Designer.cs">
+      <DependentUpon>LoginCLForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBuy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBuy.Designer.cs">
+      <DependentUpon>FormBuy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainCLForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainCLForm.Designer.cs">
+      <DependentUpon>MainCLForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegisterCLForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterCLForm.Designer.cs">
+      <DependentUpon>RegisterCLForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StartForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StartForm.Designer.cs">
+      <DependentUpon>StartForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FormAcceptOrderBuy.resx">
+      <DependentUpon>FormAcceptOrderBuy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAccRare.resx">
+      <DependentUpon>FormAccRare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdd.resx">
+      <DependentUpon>FormAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAddRare.resx">
+      <DependentUpon>FormAddRare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCheckBuy.resx">
+      <DependentUpon>FormCheckBuy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCheckOrder.resx">
+      <DependentUpon>FormCheckOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCheckOrderRare.resx">
+      <DependentUpon>FormCheckOrderRare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormItemOn.resx">
+      <DependentUpon>FormItemOn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOrder.resx">
+      <DependentUpon>FormOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOrderBuy.resx">
+      <DependentUpon>FormOrderBuy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOrderRare.resx">
+      <DependentUpon>FormOrderRare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRare.resx">
+      <DependentUpon>FormRare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormWrittenOf.resx">
+      <DependentUpon>FormWrittenOf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginCLForm.resx">
+      <DependentUpon>LoginCLForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBuy.resx">
+      <DependentUpon>FormBuy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainCLForm.resx">
+      <DependentUpon>MainCLForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="RegisterCLForm.resx">
+      <DependentUpon>RegisterCLForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartForm.resx">
+      <DependentUpon>StartForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
